@@ -8,6 +8,7 @@
     "dev": "gatsby develop"
   },
   "dependencies": {
+    "dotenv": "^8.0.0",
     "gatsby": "^2.13.27",
     "gatsby-theme-minimal": "*",
     "react": "^16.8.6",
