@@ -32,5 +32,8 @@
     "stylelint-config-recommended": "^2.2.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.8.0"
+  },
+  "dependencies": {
+    "gatsby-source-contentful": "^2.1.14"
   }
 }
