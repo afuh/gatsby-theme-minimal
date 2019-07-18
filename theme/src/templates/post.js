@@ -39,12 +39,12 @@ export const pageQuery = graphql`
           }
         }
       }
-      # content {
-      #   md: childMarkdownRemark {
-      #     html
-      #     excerpt
-      #   }
-      # }
+      content {
+        md: childMarkdownRemark {
+          html
+          excerpt
+        }
+      }
     }
   }
 `
