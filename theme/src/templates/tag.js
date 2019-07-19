@@ -1,16 +1,28 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Layout from '../components/layout'
-import PreviewData from '../components/previewData'
+import { List, Inner } from '../utils/UI'
 
 const TagTemplate = ({ pageContext, data: { allContentfulPost } }) => {
   const posts = allContentfulPost.edges.map(({ node }) => node)
 
   return (
-    <Layout heading={pageContext.tag}>
-      <PreviewData data={posts} />
+    <Layout
+      heading={(
+        <>
+          <h2>{pageContext.tag}</h2>
+          <Link to='/tag'><h1>tags</h1></Link>
+        </>
+      )}
+    >
+      <Inner
+        as='section'
+        margin
+      >
+        <List data={posts} />
+      </Inner>
     </Layout>
   )
 }

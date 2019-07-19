@@ -1,7 +1,7 @@
 module.exports = options => ({
   siteMetadata: {
     title: 'Gatsby Minimal',
-    description: "a blog minimalistic gatsby theme.",
+    description: "a minimalistic blog theme.",
     siteUrl: 'http://localhost:8000',
     image: '/icons/icon-512x512.png',
     themeColor: '#FEFEFE',

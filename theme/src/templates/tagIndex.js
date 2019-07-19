@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Layout from '../components/layout'
-import PreviewData from '../components/previewData'
+import { List, Inner } from '../utils/UI'
 
 const AllTagsTemplate = ({ pageContext: { tags } }) => {
   const formatTags = tags.map(tag => ({
@@ -12,7 +12,12 @@ const AllTagsTemplate = ({ pageContext: { tags } }) => {
 
   return (
     <Layout heading='tags'>
-      <PreviewData data={formatTags} />
+      <Inner
+        as='section'
+        margin
+      >
+        <List data={formatTags} />
+      </Inner>
     </Layout>
   )
 }

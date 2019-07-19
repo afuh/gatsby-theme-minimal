@@ -2,17 +2,42 @@ import React from "react"
 import PropTypes from 'prop-types'
 
 import Layout from "../components/layout"
-import PreviewData from "../components/previewData"
+import { FadeInText, List, Inner } from '../utils/UI'
+import { useSiteMeta, useSwitchTheme } from '../utils/hooks'
 
-const Home = ({ pageContext: { data } }) => (
-  <Layout heading='Home'>
-    <PreviewData data={data} />
-  </Layout>
-)
+const HomeTemplate = ({ pageContext: { data } }) => {
+  const { title, description } = useSiteMeta()
+  const { switchTheme } = useSwitchTheme()
+  const posts = data.allContentfulPost.edges.map(({ node }) => node)
 
-Home.propTypes = {
-  pageContext: PropTypes.object.isRequired,
-  data: PropTypes.object.isRequired
+  return (
+    <Layout
+      heading={(
+        <>
+          <FadeInText
+            as="h1"
+            duration={0.6}
+            initialOpacity={0.01}
+            onClick={() => switchTheme()}
+          >
+            {title}
+          </FadeInText>
+          <h2>{description}</h2>
+        </>
+      )}
+    >
+      <Inner
+        as='section'
+        margin
+      >
+        <List data={posts} />
+      </Inner>
+    </Layout>
+  )
 }
 
-export default Home
+HomeTemplate.propTypes = {
+  pageContext: PropTypes.object.isRequired
+}
+
+export default HomeTemplate
