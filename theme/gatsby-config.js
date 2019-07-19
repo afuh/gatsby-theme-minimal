@@ -1,4 +1,12 @@
 module.exports = options => ({
+  siteMetadata: {
+    title: 'Gatsby Minimal',
+    description: "a blog minimalistic gatsby theme.",
+    siteUrl: 'http://localhost:8000',
+    image: '/icons/icon-512x512.png',
+    themeColor: '#FEFEFE',
+    backgroundColor: '#212129'
+  },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',
@@ -41,14 +49,14 @@ module.exports = options => ({
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: options.title,
-        short_name: options.title,
-        description: options.description,
+        name: '',
+        short_name: '',
+        description: '',
         start_url: '/',
         background_color: '#fff',
         theme_color: '#000',
-        display: 'standalone'
-        // icon: 'theme/assets/icon-512x512.png'
+        display: 'standalone',
+        icon: 'theme-content/images/icon-512x512.png'
       }
     },
     {

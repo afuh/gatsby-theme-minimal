@@ -1,6 +1,7 @@
 require('dotenv').config({ path: `.env`})
 
 module.exports = {
+  siteMetadata: {},
   plugins: [
     {
       resolve: "gatsby-theme-minimal",
