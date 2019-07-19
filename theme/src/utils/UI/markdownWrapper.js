@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
+import { prismCSS } from '../prism'
+
 const Wrapper = styled.div`
   max-width: ${({ theme }) => theme.globalWidth}px;
   margin-top: 20px;
@@ -46,6 +48,8 @@ const Wrapper = styled.div`
     margin-left: 0;
     font-style: italic;
   }
+
+  ${prismCSS}
 `
 
 export const MarkdownWrapper = ({ html, children, ...rest }) => {

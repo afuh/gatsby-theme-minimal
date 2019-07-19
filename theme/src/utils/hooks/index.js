@@ -1,4 +1,6 @@
 export { useSiteMeta } from './useSiteMeta'
 export { useSwitchTheme } from './useSwitchTheme'
-export { useViewedProject } from './useViewedProject'
+export { useViewedPost } from './useViewedPost'
 export { useLocation } from './useLocation'
+export { usePostData } from './usePostData'
+export { usePagination } from './usePagination'

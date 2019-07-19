@@ -66,6 +66,7 @@ module.exports = options => ({
           'gatsby-remark-external-links',
           'gatsby-remark-responsive-iframe',
           'gatsby-remark-numbered-footnotes',
+          'gatsby-remark-prismjs',
           {
             resolve: 'gatsby-remark-images-contentful',
             options: {

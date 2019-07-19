@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled, { css } from "styled-components"
 import { Link as GatsbyLink } from "gatsby"
 
-import { useViewedProject } from '../../utils/hooks'
+import { useViewedPost } from '../../utils/hooks'
 
 const Wrapper = styled.div`
   ul {
@@ -33,7 +33,7 @@ const Link = styled(GatsbyLink)`
 `
 
 export const List = ({ data, ...rest }) => {
-  const { addViewedProject, viewedProjects } = useViewedProject()
+  const { addViewedPost, viewedPosts } = useViewedPost()
 
   return (
     <Wrapper {...rest}>
@@ -41,8 +41,8 @@ export const List = ({ data, ...rest }) => {
         {data.map(item => (
           <li key={item.slug}>
             <Link
-              checked={viewedProjects.some(slug => slug === item.slug)}
-              onClick={() => addViewedProject(item.slug)}
+              checked={viewedPosts.some(slug => slug === item.slug)}
+              onClick={() => addViewedPost(item.slug)}
               to={"/" + item.slug}
             >
               {item.title}

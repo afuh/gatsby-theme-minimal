@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from "gatsby"
 
 import Layout from '../components/layout'
 import { List, Inner } from '../utils/UI'
@@ -11,7 +12,10 @@ const AllTagsTemplate = ({ pageContext: { tags } }) => {
   }))
 
   return (
-    <Layout heading='tags'>
+    <Layout
+      heading={(
+        <Link to='/'><h1>tags</h1></Link>
+      )}>
       <Inner
         as='section'
         margin
