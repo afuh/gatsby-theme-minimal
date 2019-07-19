@@ -1,7 +1,7 @@
 module.exports = async ({ graphql, actions: { createPage } }) => {
   const { data } = await graphql(query)
 
-  data.allContentfulProject.edges.forEach(({ node }) => {
+  data.allContentfulPost.edges.forEach(({ node }) => {
     const { slug } = node
 
     createPage({
@@ -16,7 +16,7 @@ module.exports = async ({ graphql, actions: { createPage } }) => {
 
 const query = `
   {
-    allContentfulProject {
+    allContentfulPost {
       edges {
         node {
           slug

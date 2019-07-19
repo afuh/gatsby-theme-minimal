@@ -5,9 +5,9 @@ import PropTypes from 'prop-types'
 import Layout from "../components/layout"
 import PreviewData from "../components/previewData"
 
-const PostTemplate = ({ data: { project } }) => (
-  <Layout heading={project.title}>
-    <PreviewData data={project} />
+const PostTemplate = ({ data: { post } }) => (
+  <Layout heading={post.title}>
+    <PreviewData data={post} />
   </Layout>
 )
 
@@ -18,11 +18,9 @@ PostTemplate.propTypes = {
 export default PostTemplate
 
 export const pageQuery = graphql`
-  query PROJECT_PAGE_QUERY ($slug: String!) {
-    project: contentfulProject(slug: { eq: $slug }) {
-      ...projectInfo
-      url
-      code
+  query POST_PAGE_QUERY ($slug: String!) {
+    post: contentfulPost(slug: { eq: $slug }) {
+      ...postInfo
       tags
       image {
         fluid(maxWidth: 960) {

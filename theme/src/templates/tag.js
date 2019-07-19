@@ -5,12 +5,12 @@ import { graphql } from "gatsby"
 import Layout from '../components/layout'
 import PreviewData from '../components/previewData'
 
-const TagTemplate = ({ pageContext, data: { allContentfulProject } }) => {
-  const projects = allContentfulProject.edges.map(({ node }) => node)
+const TagTemplate = ({ pageContext, data: { allContentfulPost } }) => {
+  const posts = allContentfulPost.edges.map(({ node }) => node)
 
   return (
     <Layout heading={pageContext.tag}>
-      <PreviewData data={projects} />
+      <PreviewData data={posts} />
     </Layout>
   )
 }
@@ -18,7 +18,7 @@ const TagTemplate = ({ pageContext, data: { allContentfulProject } }) => {
 TagTemplate.propTypes = {
   pageContext: PropTypes.object.isRequired,
   data: PropTypes.shape({
-    allContentfulProject: PropTypes.object
+    allContentfulPost: PropTypes.object
   }).isRequired
 }
 
@@ -26,12 +26,12 @@ export default TagTemplate
 
 export const pageQuery = graphql`
   query($tag: [String!]) {
-    allContentfulProject(
+    allContentfulPost(
       filter: { tags: { in: $tag } }
     ) {
       edges {
         node {
-          ...projectInfo
+          ...postInfo
         }
       }
     }

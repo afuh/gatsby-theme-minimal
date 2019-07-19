@@ -12,11 +12,14 @@ module.exports = async ({ graphql, actions: { createPage } }) => {
 
 const query = `
   {
-    contentfulProjects {
-      projects {
-        id
-        title
-        slug
+    allContentfulPost(sort: { fields: createdAt,  order: DESC }) {
+      edges {
+        node {
+          id
+          title
+          slug
+          createdAt(fromNow:true)
+        }
       }
     }
   }

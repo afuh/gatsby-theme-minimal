@@ -12,11 +12,7 @@ const Home = ({ pageContext: { data } }) => (
 
 Home.propTypes = {
   pageContext: PropTypes.object.isRequired,
-  data: PropTypes.shape({
-    contentfulProjects: PropTypes.shape({
-      projects: PropTypes.array.isRequired
-    })
-  })
+  data: PropTypes.object.isRequired
 }
 
 export default Home

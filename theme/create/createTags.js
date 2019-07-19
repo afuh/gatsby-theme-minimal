@@ -2,7 +2,7 @@ module.exports = async ({ graphql, actions: { createPage } }) => {
   const { data } = await graphql(query)
 
   // create a tag page
-  data.allContentfulProject.group.forEach(({ name }) => {
+  data.allContentfulPost.group.forEach(({ name }) => {
     createPage({
       path: `/tag/${name}`,
       component: require.resolve('../src/templates/tag.js'),
@@ -17,14 +17,14 @@ module.exports = async ({ graphql, actions: { createPage } }) => {
     path: '/tag',
     component: require.resolve('../src/templates/tagIndex.js'),
     context: {
-      tags: data.allContentfulProject.group
+      tags: data.allContentfulPost.group
     }
   })
 }
 
 const query = `
   {
-    allContentfulProject {
+    allContentfulPost {
       group(field: tags) {
         name: fieldValue
         totalCount

@@ -1,7 +1,7 @@
 import { graphql } from "gatsby"
 
-export const projectFragment = graphql`
-  fragment projectInfo on ContentfulProject {
+export const postFragment = graphql`
+  fragment postInfo on ContentfulPost {
     id
     title
     slug
