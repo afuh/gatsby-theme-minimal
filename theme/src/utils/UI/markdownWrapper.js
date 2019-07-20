@@ -49,6 +49,42 @@ const Wrapper = styled.div`
     font-style: italic;
   }
 
+  sup {
+    margin: 0 0.2rem;
+    line-height: 1;
+  }
+
+  .footnote-ref,
+  .footnote-backref {
+    box-shadow: none;
+    &:hover,
+    &:active,
+    &:focus {
+      box-shadow: none;
+      background: ${({ theme }) => theme.accent};
+      color: ${({ theme }) => theme.black};
+      text-decoration: none;
+    }
+  }
+
+  .footnotes {
+    margin-top: 24px;
+
+    ol {
+      margin-top: 14px;
+    }
+
+    li {
+      margin-bottom: 12px;
+      font-size: 1.4rem;
+
+      p {
+        font-size: 1.4rem;
+        display: inline;
+      }
+    }
+  }
+
   ${prismCSS}
 `
 
