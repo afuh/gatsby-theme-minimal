@@ -1,22 +1,15 @@
 import React from 'react'
 import { Link } from "gatsby"
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 
 import Pagination from './pagination'
-
 import { usePostData } from '../../utils/hooks'
-import { media } from '../../utils/styles'
 
 const Wrapper = styled.div`
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  ${media.phone(css`
-    padding: 20px 0 0;
-    display: block;
-  `)}
 
   .tag-box {
     display: inline;

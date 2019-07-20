@@ -1,21 +1,14 @@
 import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { Link as GatsbyLink, navigate } from "gatsby"
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 import mousetrap from "mousetrap"
 
 import { usePagination, useViewedPost } from '../../utils/hooks'
 import { Arrow } from '../../utils/UI/icons'
-import { media } from '../../utils/styles'
 
 const Wrapper = styled.div`
   display: flex;
-
-  ${media.phone(css`
-    justify-content: center;
-    align-self: center;
-    margin-top: 20px;
-  `)}
 `
 
 const Link = styled(GatsbyLink)`
@@ -41,16 +34,6 @@ const Link = styled(GatsbyLink)`
       fill: ${({ theme }) => theme.accent};
     }
   }
-
-  ${media.phone(css`
-    width: 100%;
-    margin: 0;
-    height: 60px;
-
-    svg {
-      height: 2rem;
-    }
-  `)}
 `
 
 const Button = ({ children, slug, ...rest }) => (

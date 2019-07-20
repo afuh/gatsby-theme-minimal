@@ -11,10 +11,10 @@ const Wrapper = styled.div`
   display: flex;
   transform: translateY(-64px);
 
-
   ${media.phone(css`
     transform: translateY(0);
     flex-direction: column;
+    margin-bottom: 40px;
 
     #content {
       order: 2;
