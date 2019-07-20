@@ -39,7 +39,7 @@ const Tags = () => {
 
   return (
     <div>
-      {tags.map(tag => (
+      {tags && tags.map(tag => (
         <div
           key={tag}
           className='tag-box'

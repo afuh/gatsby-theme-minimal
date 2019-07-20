@@ -12,13 +12,18 @@ module.exports = async ({ graphql, actions: { createPage } }) => {
 
 const query = `
   {
-    allContentfulPost(sort: { fields: createdAt,  order: DESC }) {
+    allContentfulPost(sort: { fields: createdAt, order: DESC }) {
       edges {
         node {
           id
           title
           slug
-          createdAt(fromNow:true)
+          createdAt(formatString: "MMMM D, YYYY")
+          content {
+            md: childMarkdownRemark {
+              timeToRead
+            }
+          }
         }
       }
     }

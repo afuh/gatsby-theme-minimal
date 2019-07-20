@@ -30,7 +30,10 @@ const HomeTemplate = ({ pageContext: { data } }) => {
         as='section'
         margin
       >
-        <List data={posts} />
+        <List
+          data={posts}
+          home
+        />
       </Inner>
     </Layout>
   )

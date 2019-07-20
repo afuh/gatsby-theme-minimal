@@ -32,6 +32,14 @@ const Link = styled(GatsbyLink)`
   `};
 `
 
+const Info = styled.p`
+  margin: 0;
+  color: ${({ theme }) => theme.gray};
+  font-size: 1.2rem;
+  font-weight: 500;
+`
+
+
 export const List = ({ data, ...rest }) => {
   const { addViewedPost, viewedPosts } = useViewedPost()
 
@@ -46,6 +54,11 @@ export const List = ({ data, ...rest }) => {
               to={"/" + item.slug}
             >
               {item.title}
+              {rest.home &&
+                <Info>
+                  {item.createdAt} • {item.content.md.timeToRead} min read.
+                </Info>
+              }
             </Link>
           </li>
         ))}
