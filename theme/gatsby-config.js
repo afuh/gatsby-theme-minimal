@@ -39,14 +39,6 @@ module.exports = options => ({
       }
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: 'GA-xxxx',
-        anonymize: true,
-        respectDNT: true
-      }
-    },
-    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: '',
