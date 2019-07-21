@@ -1,13 +1,17 @@
 require('dotenv').config({ path: `.env`})
 
 module.exports = {
-  siteMetadata: {},
   plugins: [
     {
-      resolve: "gatsby-theme-minimal",
+      resolve: "@afuh/gatsby-theme-minimal",
       options: {
-        spaceId: process.env.SPACE_ID,
-        accessToken: process.env.TOKEN
+        title: 'Gatsby Minimal',
+        description: 'a minimalistic blog theme.',
+        siteUrl: 'https://gatsby-theme-minimal.netlify.com',
+        contentful: {
+          spaceId: process.env.SPACE_ID,
+          accessToken: process.env.TOKEN
+        }
       }
     }
   ]

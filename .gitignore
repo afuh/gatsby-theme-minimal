@@ -69,4 +69,4 @@ yarn-error.log
 .yarn-integrity
 
 .netlify/
-site/
+site/theme-content

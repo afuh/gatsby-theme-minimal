@@ -1,16 +1,17 @@
 {
   "private": true,
-  "name": "site",
+  "name": "demo-site",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "dev": "gatsby develop"
+    "dev": "gatsby develop",
+    "serve": "gatsby serve"
   },
   "dependencies": {
     "dotenv": "^8.0.0",
     "gatsby": "^2.13.27",
-    "gatsby-theme-minimal": "*",
+    "@afuh/gatsby-theme-minimal": "^0.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }
