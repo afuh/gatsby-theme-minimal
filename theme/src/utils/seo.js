@@ -20,8 +20,8 @@ const SEO = ({ title, description, image, pathname }) => {
     url: `${siteUrl}${pathname || '/'}`,
     image: {
       url: image ? checkUrl(image.url) : `${siteUrl}${defaultImage}`,
-      contentType: image ? image.contentType : "image/jpeg",
-      size: image ? image.size : { width: "720", height: "360" }
+      contentType: image ? image.contentType : "image/png",
+      size: image ? image.size : { width: "512", height: "512" }
     }
   }
 
