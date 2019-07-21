@@ -4,13 +4,19 @@ import PropTypes from 'prop-types'
 
 import Layout from "../components/layout"
 import Post from "../components/post"
+import { Info } from '../utils/UI'
 
 export const Context = createContext()
 
 const PostTemplate = ({ data: { post } }) => (
   <Layout
     heading={(
-      <Link to='/'><h1>{post.title}</h1></Link>
+      <>
+        <Link to='/'><h1>{post.title}</h1></Link>
+        <Info>
+          {post.createdAt} • {post.content.md.timeToRead} min read.
+        </Info>
+      </>
     )}
     seo={{
       title: post.title,
@@ -42,6 +48,12 @@ export const pageQuery = graphql`
       title
       slug
       tags
+      createdAt(formatString: "MMMM D, YYYY")
+      content {
+        md: childMarkdownRemark {
+          timeToRead
+        }
+      }
       image {
         fluid(maxWidth: 960) {
           ...GatsbyContentfulFluid_withWebp

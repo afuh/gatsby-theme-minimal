@@ -4,6 +4,7 @@ import styled, { css } from "styled-components"
 import { Link as GatsbyLink } from "gatsby"
 
 import { useViewedPost } from '../../utils/hooks'
+import { Info } from './'
 
 const Wrapper = styled.div`
   ul {
@@ -30,13 +31,6 @@ const Link = styled(GatsbyLink)`
   ${({ checked }) => checked && css`
     color: #6b6b6b;
   `};
-`
-
-const Info = styled.p`
-  margin: 0;
-  color: #6b6b6b;
-  font-size: 1.2rem;
-  font-weight: 500;
 `
 
 export const List = ({ data, ...rest }) => {
