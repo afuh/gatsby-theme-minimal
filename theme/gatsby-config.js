@@ -23,8 +23,9 @@ module.exports = options => ({
     {
       resolve: 'gatsby-source-contentful',
       options: {
-        spaceId: options.spaceId,
-        accessToken: options.accessToken
+        spaceId: options.contentful.spaceId,
+        accessToken: options.contentful.accessToken,
+        ...options.contentful
       }
     },
     {
