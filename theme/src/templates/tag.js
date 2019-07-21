@@ -43,7 +43,9 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          ...postInfo
+          id
+          title
+          slug
         }
       }
     }

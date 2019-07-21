@@ -38,7 +38,9 @@ export default PostTemplate
 export const pageQuery = graphql`
   query POST_PAGE_QUERY ($slug: String!) {
     post: contentfulPost(slug: { eq: $slug }) {
-      ...postInfo
+      id
+      title
+      slug
       tags
       image {
         fluid(maxWidth: 960) {

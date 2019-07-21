@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-theme-minimal",
+  "name": "@afuh/gatsby-theme-minimal",
   "author": "Axel Fuhrmann <axelfuh@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/afuh/gatsby-theme-minimal.git"
   },
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -58,5 +58,10 @@
     "prismjs": "^1.16.0",
     "react-helmet": "^5.2.1",
     "styled-components": "^4.3.2"
-  }
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-theme",
+    "gatsby-plugin"
+  ]
 }
