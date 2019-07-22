@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components'
 
 const Wrapper = styled.div`
   ${({ theme }) => theme && css`
-    min-height: calc(100vh - ${theme.headerHeight.desktop}px);
+    min-height: calc(100vh - ${theme.headerHeight}px);
   `};
 
   padding: 10px 30px;

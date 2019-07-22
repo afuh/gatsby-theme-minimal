@@ -1,12 +1,8 @@
 export default {
-  black: "#212129",
-  white: "#FEFEFE",
+  primary: "#212129",
+  secondary: "#FEFEFE",
+  accent: "#78ff78",
   gray: "#9F9FA3",
   softGray: "#9F9FA31a",
-  accent: "#78ff78",
-  globalWidth: 600,
-  headerHeight: {
-    desktop: 220,
-    mobile: 110
-  }
+  postWidth: 600
 }

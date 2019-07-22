@@ -22,7 +22,7 @@ export const prismCSS = css`
 
   code[class*="language-"],
   pre[class*="language-"] {
-  	color: ${({ theme }) => theme.white};
+  	color: ${({ theme }) => theme.secondary};
   	background: none;
   	text-align: left;
   	white-space: pre;
@@ -36,7 +36,7 @@ export const prismCSS = css`
 
   /* Code blocks */
   pre[class*="language-"] {
-    background: ${({ theme }) => theme.black};
+    background: ${({ theme }) => theme.primary};
   	padding: 1em;
   	margin: .5em 0;
   	overflow: auto;

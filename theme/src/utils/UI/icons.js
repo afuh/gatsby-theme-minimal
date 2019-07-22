@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components'
 
 const Svg = styled.svg`
   ${({ theme }) => css`
-    fill: ${theme.black};
+    fill: ${theme.primary};
     height: 100%;
   `}
 `

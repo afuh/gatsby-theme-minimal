@@ -1,10 +1,20 @@
 import { css } from 'styled-components'
 
 import { media } from './styles'
-import theme from '../theme'
+import userEditable from '../theme'
 
 export const themeUtils = {
-  ...theme,
+  // user editable
+  primary: "#212129",
+  secondary: "#FEFEFE",
+  accent: "#78ff78",
+  gray: "#9F9FA3",
+  softGray: "#9F9FA31a",
+  postWidth: 600,
+  ...userEditable,
+
+  // theme utils
+  headerHeight: 220,
   globalMargin: (val = 40) => css`
     margin-top: ${val}px;
 
@@ -19,8 +29,8 @@ export const themeUtils = {
     &:hover,
     &:active,
     &:focus {
-      box-shadow: inset 0 -2rem ${theme.black};
-      color: ${theme.white};
+      box-shadow: inset 0 -2rem ${theme.primary};
+      color: ${theme.secondary};
     }
   `,
   globalPadding: (padding = 6) => css`

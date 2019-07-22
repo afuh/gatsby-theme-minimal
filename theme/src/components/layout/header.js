@@ -11,19 +11,25 @@ const Wrapper = styled.header`
   justify-content: center;
 
   ${({ theme }) => theme && css`
-    height: ${theme.headerHeight.desktop}px;
-    background: ${theme.black};
+    height: ${theme.headerHeight}px;
+    background: ${theme.primary};
 
     ${media.phone(css`
-      height: ${theme.headerHeight.mobile}px;
+      height: 110px;
     `)}
   `};
 
   .heading {
     flex: 1;
 
+    p {
+      ${media.phone(css`
+        text-align: center;
+      `)}
+    }
+
     h1, h2 {
-      color: ${({ theme }) => theme.white};
+      color: ${({ theme }) => theme.secondary};
       font-weight: 900;
       font-size: 5.0rem;
       margin: 0;
@@ -63,7 +69,7 @@ export const Link = styled(GatsbyLink)`
   &:active,
   &:focus,
   &.active {
-    color: ${({ theme }) => theme.white};
+    color: ${({ theme }) => theme.secondary};
   }
 `
 

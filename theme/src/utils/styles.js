@@ -82,7 +82,7 @@ const typography = css`
 
   a {
     text-decoration: none;
-    color: ${({ theme }) => theme.black};
+    color: ${({ theme }) => theme.primary};
 
     &:hover,
     &:active,
@@ -104,11 +104,11 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     ${({ theme }) => css`
-      color: ${theme.black};
-      background: ${theme.white};
+      color: ${theme.primary};
+      background: ${theme.secondary};
 
       *::selection {
-        color: ${theme.black};
+        color: ${theme.primary};
         background: ${theme.accent};
       }
     `};

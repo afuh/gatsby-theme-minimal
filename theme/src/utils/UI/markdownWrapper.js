@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { prismCSS } from '../prism'
 
 const Wrapper = styled.div`
-  max-width: ${({ theme }) => theme.globalWidth}px;
+  max-width: ${({ theme }) => theme.postWidth}px;
   margin-top: 20px;
   font-family: "Open Sans", sans-serif;
 
@@ -62,7 +62,7 @@ const Wrapper = styled.div`
     &:focus {
       box-shadow: none;
       background: ${({ theme }) => theme.accent};
-      color: ${({ theme }) => theme.black};
+      color: ${({ theme }) => theme.primary};
       text-decoration: none;
     }
   }
