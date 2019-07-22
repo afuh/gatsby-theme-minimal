@@ -1,16 +1,16 @@
 import React, { useState, createContext, useContext } from 'react'
 
-import { theme as defaultTheme } from '../theme'
+import { themeUtils } from '../themeUtils'
 
 const Context = createContext()
 export const useSwitchTheme = () => useContext(Context)
 
 const SwitchThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState(defaultTheme)
+  const [theme, setTheme] = useState(themeUtils)
 
   const switchTheme = () => {
     setTheme({
-      ...defaultTheme,
+      ...themeUtils,
       white: theme.black,
       black: theme.white
     })

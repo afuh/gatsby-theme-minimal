@@ -1,18 +1,10 @@
 import { css } from 'styled-components'
 
 import { media } from './styles'
+import theme from '../theme'
 
-export const theme = {
-  black: "#212129",
-  white: "#FEFEFE",
-  gray: "#9F9FA3",
-  softGray: "#9F9FA31a",
-  accent: "#78ff78",
-  globalWidth: 600,
-  headerHeight: {
-    desktop: 220,
-    mobile: 110
-  },
+export const themeUtils = {
+  ...theme,
   globalMargin: (val = 40) => css`
     margin-top: ${val}px;
 
