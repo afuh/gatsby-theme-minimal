@@ -1,5 +1,5 @@
-export { FadeInText } from './fadeInText'
-export { Inner } from './containers'
-export { List } from './list'
-export { MarkdownWrapper } from './markdownWrapper'
-export { Info } from './info'
+export { FadeInText } from "./fadeInText"
+export { Inner } from "./containers"
+export { List } from "./list"
+export { MarkdownWrapper } from "./markdownWrapper"
+export { Info } from "./info"

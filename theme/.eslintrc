@@ -47,6 +47,9 @@ rules:
   comma-dangle:
     - error
     - never
+  quotes:
+    - error
+    - double
   no-lonely-if: error
   no-unneeded-ternary: error
   no-whitespace-before-property: error

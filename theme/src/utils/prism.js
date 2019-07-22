@@ -2,15 +2,15 @@ import { css } from "styled-components"
 
 const schema = {
   gray: "#9F9FA3",
-  cyan: '#00BCD4',
+  cyan: "#00BCD4",
   purple: "#c678dd",
-  blue: '#61afef',
-  yellow: '#e5c07b',
-  brown: '#d19a66',
-  green: '#98c379',
+  blue: "#61afef",
+  yellow: "#e5c07b",
+  brown: "#d19a66",
+  green: "#98c379",
   inline: {
-    back: '#eaeced',
-    color: '#323232'
+    back: "#eaeced",
+    color: "#323232"
   }
 }
 

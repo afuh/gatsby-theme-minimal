@@ -1,11 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react"
+import PropTypes from "prop-types"
 import styled from "styled-components"
 
-import Footer from './footer'
-import Image from './image'
-import { MarkdownWrapper } from '../../utils/UI'
-import { usePostData } from '../../utils/hooks'
+import Footer from "./footer"
+import Image from "./image"
+import { MarkdownWrapper } from "../../utils/UI"
+import { usePostData } from "../../utils/hooks"
 
 const Wrapper = styled.div`
   .text-wrapper {

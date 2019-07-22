@@ -1,6 +1,6 @@
-import React, { useState, createContext, useContext } from 'react'
+import React, { useState, createContext, useContext } from "react"
 
-import { themeUtils } from '../themeUtils'
+import { themeUtils } from "../themeUtils"
 
 const Context = createContext()
 export const useSwitchTheme = () => useContext(Context)

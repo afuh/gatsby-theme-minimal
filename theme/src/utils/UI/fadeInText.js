@@ -1,10 +1,10 @@
-import React, { useState, useEffect, createElement } from 'react'
-import PropTypes from 'prop-types'
+import React, { useState, useEffect, createElement } from "react"
+import PropTypes from "prop-types"
 import styled, { css } from "styled-components"
 
-import { media } from '../../utils/styles'
+import { media } from "../../utils/styles"
 
-const isSSR = typeof window === 'undefined'
+const isSSR = typeof window === "undefined"
 
 const Span = styled.span`
 	transition: opacity .5s ease-in-out;

@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react"
 import styled, { css } from "styled-components"
 
-import Content from './content'
+import Content from "./content"
 
-import Image from './image'
-import { Inner } from '../../utils/UI'
-import { media } from '../../utils/styles'
+import Image from "./image"
+import { Inner } from "../../utils/UI"
+import { media } from "../../utils/styles"
 
 const Wrapper = styled.div`
   display: flex;

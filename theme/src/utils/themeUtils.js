@@ -1,7 +1,7 @@
-import { css } from 'styled-components'
+import { css } from "styled-components"
 
-import { media } from './styles'
-import userEditable from '../theme'
+import { media } from "./styles"
+import userEditable from "../theme"
 
 export const themeUtils = {
   // user editable

@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import styled, { css } from 'styled-components'
+import React, { useState } from "react"
+import styled, { css } from "styled-components"
 
 const Wrapper = styled.div`
   ${({ theme }) => theme && css`
@@ -26,7 +26,7 @@ const Wrapper = styled.div`
 `
 
 const ImageWrapper = styled.div.attrs({
-  id: 'image-wrapper'
+  id: "image-wrapper"
 })`
   position: relative;
   border: 10px solid #fff;

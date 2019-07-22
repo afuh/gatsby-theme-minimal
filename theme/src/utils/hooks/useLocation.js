@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react'
-import { globalHistory } from '@reach/router'
+import { useState, useEffect } from "react"
+import { globalHistory } from "@reach/router"
 
 export const useLocation = () => {
   const initialState = {

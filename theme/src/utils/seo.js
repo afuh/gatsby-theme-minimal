@@ -1,8 +1,8 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import PropTypes from 'prop-types'
+import React from "react"
+import Helmet from "react-helmet"
+import PropTypes from "prop-types"
 
-import { useSiteMeta } from './hooks'
+import { useSiteMeta } from "./hooks"
 
 const checkUrl = url => url.match(/^https/i) ? url : "https:" + url
 
@@ -17,7 +17,7 @@ const SEO = ({ title, description, image, pathname }) => {
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    url: `${siteUrl}${pathname || '/'}`,
+    url: `${siteUrl}${pathname || "/"}`,
     image: {
       url: image ? checkUrl(image.url) : `${siteUrl}${defaultImage}`,
       contentType: image ? image.contentType : "image/png",

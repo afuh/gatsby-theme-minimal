@@ -1,10 +1,10 @@
-import React, { createContext } from 'react'
+import React, { createContext } from "react"
 import { graphql, Link } from "gatsby"
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types"
 
 import Layout from "../components/layout"
 import Post from "../components/post"
-import { Info } from '../utils/UI'
+import { Info } from "../utils/UI"
 
 export const Context = createContext()
 

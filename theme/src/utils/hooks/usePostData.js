@@ -1,5 +1,5 @@
-import { useContext } from 'react'
+import { useContext } from "react"
 
-import { Context } from '../../templates/post'
+import { Context } from "../../templates/post"
 
 export const usePostData = () => useContext(Context)

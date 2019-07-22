@@ -1,4 +1,4 @@
-import { css, createGlobalStyle } from 'styled-components'
+import { css, createGlobalStyle } from "styled-components"
 
 
 const screenBreak = {
@@ -47,15 +47,15 @@ export const media = {
 }
 
 const defaultFont = [
-  '-apple-system',
-  'BlinkMacSystemFont',
-  '"Segoe UI"',
-  'Roboto',
-  'Oxygen-Sans',
-  'Ubuntu',
-  'Cantarell',
-  '"Helvetica Neue"',
-  'sans-serif'
+  "-apple-system",
+  "BlinkMacSystemFont",
+  "\"Segoe UI\"",
+  "Roboto",
+  "Oxygen-Sans",
+  "Ubuntu",
+  "Cantarell",
+  "\"Helvetica Neue\"",
+  "sans-serif"
 ].join()
 
 

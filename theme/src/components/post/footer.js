@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
-import Pagination from './pagination'
-import { usePostData } from '../../utils/hooks'
+import Pagination from "./pagination"
+import { usePostData } from "../../utils/hooks"
 
 const Wrapper = styled.div`
   padding: 20px 0;

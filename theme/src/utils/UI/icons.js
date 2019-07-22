@@ -1,6 +1,6 @@
 /* eslint react/prop-types: 0 max-len: 0 */
-import React from 'react'
-import styled, { css } from 'styled-components'
+import React from "react"
+import styled, { css } from "styled-components"
 
 const Svg = styled.svg`
   ${({ theme }) => css`

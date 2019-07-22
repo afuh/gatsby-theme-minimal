@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styled, { css } from 'styled-components'
-import { Link as GatsbyLink } from 'gatsby'
+import React from "react"
+import PropTypes from "prop-types"
+import styled, { css } from "styled-components"
+import { Link as GatsbyLink } from "gatsby"
 
-import { media } from '../../utils/styles'
-import { Inner } from '../../utils/UI'
+import { media } from "../../utils/styles"
+import { Inner } from "../../utils/UI"
 
 const Wrapper = styled.header`
   display: flex;
@@ -75,7 +75,7 @@ export const Link = styled(GatsbyLink)`
 
 const Heading = ({ data }) => (
   <div className='heading'>
-    {typeof data === 'string' ?
+    {typeof data === "string" ?
       <GatsbyLink to='/'><h1>{data}</h1></GatsbyLink> :
       data
     }

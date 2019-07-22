@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react"
+import PropTypes from "prop-types"
 import styled, { css } from "styled-components"
-import Img from 'gatsby-image'
+import Img from "gatsby-image"
 
-import { media } from '../../utils/styles'
-import { usePostData } from '../../utils/hooks'
+import { media } from "../../utils/styles"
+import { usePostData } from "../../utils/hooks"
 
 const ImageWrapper = styled.div`
   position: relative;

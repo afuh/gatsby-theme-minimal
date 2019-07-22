@@ -1,8 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import React from "react"
+import PropTypes from "prop-types"
+import styled from "styled-components"
 
-import { prismCSS } from '../prism'
+import { prismCSS } from "../prism"
 
 const Wrapper = styled.div`
   max-width: ${({ theme }) => theme.postWidth}px;

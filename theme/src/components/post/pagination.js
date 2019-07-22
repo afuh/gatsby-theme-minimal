@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react'
-import PropTypes from 'prop-types'
+import React, { useEffect } from "react"
+import PropTypes from "prop-types"
 import { Link as GatsbyLink, navigate } from "gatsby"
 import styled from "styled-components"
 import mousetrap from "mousetrap"
 
-import { usePagination, useViewedPost } from '../../utils/hooks'
-import { Arrow } from '../../utils/UI/icons'
+import { usePagination, useViewedPost } from "../../utils/hooks"
+import { Arrow } from "../../utils/UI/icons"
 
 const Wrapper = styled.div`
   display: flex;
@@ -38,7 +38,7 @@ const Link = styled(GatsbyLink)`
 
 const Button = ({ children, slug, ...rest }) => (
   <Link
-    to={'/' + slug}
+    to={"/" + slug}
     {...rest}
   >
     {children}
@@ -54,18 +54,18 @@ const Pagination = () => {
   const { addViewedPost } = useViewedPost()
 
   useEffect(() => {
-    mousetrap.bind('right', () => {
+    mousetrap.bind("right", () => {
       navigate(next)
       addViewedPost(next)
     })
-    mousetrap.bind('left', () => {
+    mousetrap.bind("left", () => {
       navigate(prev)
       addViewedPost(prev)
     })
 
     return () => {
-      mousetrap.unbind('left')
-      mousetrap.unbind('right')
+      mousetrap.unbind("left")
+      mousetrap.unbind("right")
     }
   })
 

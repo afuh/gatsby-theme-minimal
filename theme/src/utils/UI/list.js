@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react"
+import PropTypes from "prop-types"
 import styled, { css } from "styled-components"
 import { Link as GatsbyLink } from "gatsby"
 
-import { useViewedPost } from '../../utils/hooks'
-import { Info } from './'
+import { useViewedPost } from "../../utils/hooks"
+import { Info } from "./"
 
 const Wrapper = styled.div`
   ul {

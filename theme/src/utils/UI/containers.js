@@ -1,5 +1,5 @@
-import { number, bool } from 'prop-types'
-import styled from 'styled-components'
+import { number, bool } from "prop-types"
+import styled from "styled-components"
 
 export const Inner = styled.div`
   width: 100%;

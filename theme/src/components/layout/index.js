@@ -1,12 +1,12 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react"
+import PropTypes from "prop-types"
 import styled, { css, ThemeProvider } from "styled-components"
 
-import SEO from '../../utils/seo'
-import { GlobalStyles, media } from '../../utils/styles'
-import { useSwitchTheme, useLocation } from '../../utils/hooks'
+import SEO from "../../utils/seo"
+import { GlobalStyles, media } from "../../utils/styles"
+import { useSwitchTheme, useLocation } from "../../utils/hooks"
 
-import Header from './header'
+import Header from "./header"
 
 const Main = styled.main`
   ${media.phone(css`

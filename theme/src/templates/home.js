@@ -1,9 +1,9 @@
 import React from "react"
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types"
 
 import Layout from "../components/layout"
-import { FadeInText, List, Inner } from '../utils/UI'
-import { useSiteMeta, useSwitchTheme } from '../utils/hooks'
+import { FadeInText, List, Inner } from "../utils/UI"
+import { useSiteMeta, useSwitchTheme } from "../utils/hooks"
 
 const HomeTemplate = ({ pageContext: { data } }) => {
   const { title, description } = useSiteMeta()

@@ -1,5 +1,5 @@
-import { useStaticQuery, graphql } from 'gatsby'
-import { useLocation } from './'
+import { useStaticQuery, graphql } from "gatsby"
+import { useLocation } from "./"
 
 const query = graphql`
   {
@@ -28,5 +28,5 @@ export const usePagination = () => {
       }
     }
     return acc
-  }, { prev: '', next: '' })
+  }, { prev: "", next: "" })
 }

@@ -1,4 +1,4 @@
-import React, { useState, createContext, useContext } from 'react'
+import React, { useState, createContext, useContext } from "react"
 
 const Context = createContext()
 export const useViewedPost = () => useContext(Context)
