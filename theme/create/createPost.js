@@ -6,7 +6,7 @@ module.exports = async ({ graphql, actions: { createPage } }) => {
 
     createPage({
       path: slug,
-      component: require.resolve('../src/templates/post.js'),
+      component: require.resolve("../src/templates/post.js"),
       context: {
         slug
       }
