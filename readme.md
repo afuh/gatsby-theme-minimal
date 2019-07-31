@@ -62,7 +62,7 @@ module.exports = {
         contentful: {
           spaceId: "your Contentful space id",
           accessToken: "your Contentful access token"
-        }
+        },
         title: "Your title",
         description: "Your description",
         siteUrl: 'https://example.com', // no trailing slash
