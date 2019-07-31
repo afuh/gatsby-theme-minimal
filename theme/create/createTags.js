@@ -5,7 +5,7 @@ module.exports = async ({ graphql, actions: { createPage } }) => {
   data.allContentfulPost.group.forEach(({ name }) => {
     createPage({
       path: `/tag/${name}`,
-      component: require.resolve('../src/templates/tag.js'),
+      component: require.resolve("../src/templates/tag.js"),
       context: {
         tag: name
       }
@@ -14,8 +14,8 @@ module.exports = async ({ graphql, actions: { createPage } }) => {
 
   // create a tag index
   createPage({
-    path: '/tag',
-    component: require.resolve('../src/templates/tagIndex.js'),
+    path: "/tag",
+    component: require.resolve("../src/templates/tagIndex.js"),
     context: {
       tags: data.allContentfulPost.group
     }

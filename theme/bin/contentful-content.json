@@ -1,0 +1,423 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "id": "post",
+        "type": "ContentType",
+        "createdAt": "2019-07-19T07:29:12.511Z",
+        "updatedAt": "2019-07-19T07:29:13.390Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2019-07-19T07:29:13.390Z",
+        "firstPublishedAt": "2019-07-19T07:29:13.390Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4Yadqw2A5VfCObX8v0prbE"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4Yadqw2A5VfCObX8v0prbE"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4Yadqw2A5VfCObX8v0prbE"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Post",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "content",
+          "name": "Content",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "linkMimetypeGroup": [
+                "image"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "tags",
+          "name": "tags",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+            ]
+          }
+        },
+        {
+          "id": "slug",
+          "name": "slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "version": 2,
+        "createdAt": "2019-07-19T07:29:13.562Z",
+        "createdBy": {
+          "sys": {
+            "id": "4Yadqw2A5VfCObX8v0prbE",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2019-07-19T07:29:14.412Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4Yadqw2A5VfCObX8v0prbE",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "post",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "content",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "image",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "tags",
+          "widgetId": "tagEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "slug",
+          "widgetId": "slugEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "sys": {
+        "id": "1ZWCpG2mCmJg0fp6qXz7x1",
+        "type": "Entry",
+        "createdAt": "2019-07-20T10:31:37.443Z",
+        "updatedAt": "2019-07-21T16:19:58.444Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 148,
+        "publishedAt": "2019-07-21T16:19:58.444Z",
+        "firstPublishedAt": "2019-07-20T10:34:46.859Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4Yadqw2A5VfCObX8v0prbE"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4Yadqw2A5VfCObX8v0prbE"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 149,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4Yadqw2A5VfCObX8v0prbE"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "post"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Example post"
+        },
+        "content": {
+          "en-US": "\n# Ullamcorper Tristique Ridiculus\n\nMaecenas faucibus mollis interdum[^1]. Nullam quis [risus eget urna mollis](https://example.com) ornare vel eu leo. Nullam[^2] quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit `tempus porttitor`.\n\n**Donec id elit non mi porta gravida at eget metus.** Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.\n\n> Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.\n\n## Ullamcorper Tristique Ridiculus\n\n![photo-1504179825965-0c72f5d014e9](//images.ctfassets.net/35ij2mgqvgw8/3Tmnd6X4MFVwtncMi1obJw/4873e9dfc3e9c0c17e937b3acbcb879e/photo-1504179825965-0c72f5d014e9)\n\n*Integer posuere erat a ante* venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.\n\n- Nullam id dolor id nibh ultricies vehicula ut id elit\n- Nullam id dolor id nibh \n\nEtiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.\n\n### Tristique Ridiculus\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Kl6PiEYUf2A\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n\nCurabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.\n\n### fermentum massa \n```jsx\nconst Home = () => (\n  <Layout>\n    <h1>Hello World!</h1>\n  </Layout>\n)\n```\n\nCurabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.\n\n[^1]: Curabitur blandit tempus porttitor.\n[^2]: Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam."
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "gD7bg9vGQocKy9wStqLMb"
+            }
+          }
+        },
+        "tags": {
+          "en-US": [
+            "travel",
+            "life",
+            "code"
+          ]
+        },
+        "slug": {
+          "en-US": "example-post"
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "sys": {
+        "id": "gD7bg9vGQocKy9wStqLMb",
+        "type": "Asset",
+        "createdAt": "2019-07-20T10:33:45.288Z",
+        "updatedAt": "2019-07-20T10:34:31.100Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2019-07-20T10:34:31.100Z",
+        "firstPublishedAt": "2019-07-20T10:34:31.100Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4Yadqw2A5VfCObX8v0prbE"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4Yadqw2A5VfCObX8v0prbE"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4Yadqw2A5VfCObX8v0prbE"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "photo-1444703686981-a3abbc4d4fe3"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/35ij2mgqvgw8/gD7bg9vGQocKy9wStqLMb/938604cd71ae909378e6e8933056e4ed/photo-1444703686981-a3abbc4d4fe3",
+            "details": {
+              "size": 347427,
+              "image": {
+                "width": 1650,
+                "height": 1100
+              }
+            },
+            "fileName": "photo-1444703686981-a3abbc4d4fe3",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "3Tmnd6X4MFVwtncMi1obJw",
+        "type": "Asset",
+        "createdAt": "2019-07-21T16:12:51.919Z",
+        "updatedAt": "2019-07-21T16:12:54.973Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2019-07-21T16:12:54.973Z",
+        "firstPublishedAt": "2019-07-21T16:12:54.973Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4Yadqw2A5VfCObX8v0prbE"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4Yadqw2A5VfCObX8v0prbE"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4Yadqw2A5VfCObX8v0prbE"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "photo-1504179825965-0c72f5d014e9"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/35ij2mgqvgw8/3Tmnd6X4MFVwtncMi1obJw/4873e9dfc3e9c0c17e937b3acbcb879e/photo-1504179825965-0c72f5d014e9",
+            "details": {
+              "size": 96524,
+              "image": {
+                "width": 1190,
+                "height": 669
+              }
+            },
+            "fileName": "photo-1504179825965-0c72f5d014e9",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "13tfQyEIklH3MheqEvUm4y",
+        "version": 1,
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4Yadqw2A5VfCObX8v0prbE"
+          }
+        },
+        "createdAt": "2019-07-19T07:24:14Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4Yadqw2A5VfCObX8v0prbE"
+          }
+        },
+        "updatedAt": "2019-07-19T07:24:14Z"
+      }
+    }
+  ]
+}
