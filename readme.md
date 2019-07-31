@@ -15,8 +15,26 @@
 - Tags
 
 ## Quick start
-### Contentful Content Model
-Open your [Contentful](https://app.contentful.com/) app and create a `Post` content model with the following fields:
+### Installation
+You don't need to start a gatsby site, you only need to install a couple of dependencies and create a `gatsby-config.js`, that's it.
+
+The [folder structure](https://github.com/afuh/gatsby-theme-minimal/tree/develop/site) of the demo site is just two files!
+
+```
+mkdir my-blog
+cd my-blog
+npm init
+npm i gatsby react react-dom @afuh/gatsby-theme-minimal
+```
+
+#### Contentful Content Model
+Automatically upload a `Post` content model into your Contentful space:
+```
+npm explore @afuh/gatsby-theme-minimal -- npm run setup
+```
+You will need to provide a Space ID and a Management token. You can find both keys here: **app.contentful.com → Space Settings → API keys.**
+
+If instead you prefer to do it manually, open your [Contentful](https://app.contentful.com/) app and create a `Post` content model with the following fields:
 - **Title**: `short text`.
 - **Content**: `long text`, `markdown`.
 - **Image**: `media`.
@@ -30,17 +48,6 @@ It should look like this:
 After you create the `Post` model remember to write some post entries. Let your creative side do the work ;).
 
 ### Gatsby
-You don't need to start a gatsby site, you only need to install a couple of dependencies and create a `gatsby-config.js`, that's it.
-
-The [folder structure](https://github.com/afuh/gatsby-theme-minimal/tree/develop/site) of the demo site is just two files!
-
-```
-mkdir my-blog
-cd my-blog
-npm init
-npm i gatsby react react-dom @afuh/gatsby-theme-minimal
-```
-
 Create a `gatsby-config.js`, add the theme with your settings and you are good to go.
 If you want to know more about the Contentful options check [gatsby-source-contentful](https://www.gatsbyjs.org/packages/gatsby-source-contentful)
 
