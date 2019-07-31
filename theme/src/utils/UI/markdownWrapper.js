@@ -6,7 +6,6 @@ import { prismCSS } from "../prism"
 
 const Wrapper = styled.div`
   max-width: ${({ theme }) => theme.postWidth}px;
-  margin-top: 20px;
   font-family: "Open Sans", sans-serif;
 
   h2, h3 {
@@ -15,7 +14,6 @@ const Wrapper = styled.div`
   }
 
   p, li {
-    margin-top: 0;
     font-size: 1.6rem;
     line-height: 1.5;
   }

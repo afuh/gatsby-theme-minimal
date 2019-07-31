@@ -14,6 +14,7 @@ export const themeUtils = {
   ...userEditable,
 
   // theme utils
+  padding: 6,
   headerHeight: 220,
   globalMargin: (val = 40) => css`
     margin-top: ${val}px;
@@ -33,7 +34,7 @@ export const themeUtils = {
       color: ${theme.secondary};
     }
   `,
-  globalPadding: (padding = 6) => css`
+  globalPadding: padding => css`
     padding: 0 ${padding}% 0 ${padding*2}%;
 
     ${media.medium(css`

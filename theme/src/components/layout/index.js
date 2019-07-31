@@ -11,9 +11,6 @@ import Header from "./header"
 const Main = styled.main`
   ${media.phone(css`
     min-height: calc(100vh - ${({ theme }) => theme.headerHeight}px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
   `)}
 `
 

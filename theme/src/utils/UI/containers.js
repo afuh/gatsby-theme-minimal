@@ -6,7 +6,7 @@ export const Inner = styled.div`
   display: flex;
   align-items: center;
 
-  ${({ theme, padding }) => theme.globalPadding(padding)}
+  ${({ theme }) => theme.globalPadding(theme.padding)}
   ${({ theme, margin }) => margin && theme.globalMargin()}
 `
 
@@ -16,6 +16,5 @@ Inner.propTypes = {
 }
 
 Inner.defaultProps = {
-  padding: 6,
   margin: false
 }
