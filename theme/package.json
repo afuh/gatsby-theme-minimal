@@ -5,14 +5,15 @@
     "type": "git",
     "url": "https://github.com/afuh/gatsby-theme-minimal.git"
   },
-  "version": "0.1.1",
+  "version": "0.1.5",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop",
     "clean": "gatsby clean",
-    "test": "stylelint './src/**/*.js' && eslint src/."
+    "test": "stylelint './src/**/*.js' && eslint src/.",
+    "setup": "node ./bin/setup.js"
   },
   "peerDependencies": {
     "gatsby": "^2.13.27",
@@ -35,6 +36,8 @@
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
+    "chalk": "^2.4.2",
+    "contentful-import": "^7.5.1",
     "gatsby-image": "^2.2.6",
     "gatsby-plugin-catch-links": "^2.1.2",
     "gatsby-plugin-feed": "^2.3.5",
