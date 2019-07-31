@@ -12,9 +12,13 @@ const Wrapper = styled.div`
   transform: translateY(-64px);
 
   ${media.phone(css`
+    display: block;
     transform: translateY(0);
-    flex-direction: column;
     margin-bottom: 40px;
+
+    ${({ theme }) => css`
+      width: calc(100vw - ${theme.padding*2}%);
+    `};
 
     #content {
       order: 2;

@@ -41,7 +41,6 @@ export const prismCSS = css`
   	margin: .5em 0;
   	overflow: auto;
   	border-radius: 2px;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08)
   }
 
   /* Inline code */
@@ -49,7 +48,7 @@ export const prismCSS = css`
   li > code[class*="language-"] {
     background: ${schema.inline.back};
     color: ${schema.inline.color};
-    padding: 0.2em 0.4em;
+    padding: 0.2em;
     border-radius: 0;
     white-space: normal;
   }
