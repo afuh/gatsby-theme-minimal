@@ -58,7 +58,7 @@
     "gatsby-source-contentful": "^2.1.14",
     "gatsby-transformer-remark": "^2.6.7",
     "mousetrap": "^1.6.3",
-    "prismjs": "^1.16.0",
+    "prismjs": "^1.21.0",
     "react-helmet": "^5.2.1",
     "styled-components": "^4.3.2"
   },
